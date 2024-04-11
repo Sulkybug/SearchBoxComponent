@@ -1,0 +1,23 @@
+.search {
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #888888b7;
+  padding: 12px 0px 5px 0px;
+}
+
+input {
+  text-transform: capitalize;
+  height: 25px;
+  margin-left: 15px;
+  border-radius: 10px;
+  width: 270px;
+  border: solid 1px #888;
+}
+
+.icon {
+  position: relative;
+  right: 25px;
+  padding-top: 2px;
+}

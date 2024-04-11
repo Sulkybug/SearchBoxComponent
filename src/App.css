@@ -1,0 +1,16 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  border: solid 1px #888888b7;
+  border-radius: 1px;
+}
+
+.usersBox {
+  height: 500px;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-gutter: none;
+  scrollbar-color: #888888b7 #242424;
+  scrollbar-width: thin;
+}

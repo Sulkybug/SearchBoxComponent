@@ -1,0 +1,7 @@
+.userBox {
+  width: 280px;
+  display: flex;
+  text-align: left;
+  padding: 8px 0px 8px 20px;
+  border: solid 1px #888888b7;
+}
