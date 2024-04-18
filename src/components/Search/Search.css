@@ -1,10 +1,11 @@
 .search {
   display: flex;
-  width: 300px;
+  width: 320px;
   justify-content: center;
   align-items: center;
   border: solid 1px #888888b7;
   padding: 12px 0px 5px 0px;
+  border-top-left-radius: 10px;
 }
 
 input {
@@ -12,7 +13,7 @@ input {
   height: 25px;
   margin-left: 15px;
   border-radius: 10px;
-  width: 270px;
+  width: 295px;
   border: solid 1px #888;
 }
 

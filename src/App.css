@@ -4,6 +4,8 @@
   text-align: center;
   border: solid 1px #888888b7;
   border-radius: 1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .usersBox {
@@ -13,4 +15,10 @@
   scrollbar-gutter: none;
   scrollbar-color: #888888b7 #242424;
   scrollbar-width: thin;
+}
+
+@media only screen and (max-width: 700px) {
+  .usersBox {
+    height: 335px;
+  }
 }
