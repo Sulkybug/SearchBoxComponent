@@ -9,12 +9,15 @@ function App() {
   const [resultUsers, setResultUsers] = useState([]);
 
   useEffect(() => {
-    fetch("https://randomuser.me/api/?results=40")
-      .then((response) => response.json())
-      .then((data) => {
-        setUsers(data.results);
-        setResultUsers(data.results);
-      });
+    const getData = async () => {
+      await fetch("https://randomuser.me/api/?results=40")
+        .then((response) => response.json())
+        .then((data) => {
+          setUsers(data.results);
+          setResultUsers(data.results);
+        });
+    };
+    getData();
   }, []);
 
   const filterUsers = (searchString) => {
@@ -23,13 +26,17 @@ function App() {
     );
     setResultUsers(filtered);
   };
-  //console.log(users.name.title);
+
   return (
     <>
       <Search filterUsers={filterUsers} />
       <div className="usersBox">
         {resultUsers.length > 0
-          ? resultUsers.map((user) => <Users name={user.name.first} />)
+          ? resultUsers.map((user) => (
+              <div key={user.cell}>
+                <Users name={user.name.first} />
+              </div>
+            ))
           : "No matches"}
       </div>
     </>
